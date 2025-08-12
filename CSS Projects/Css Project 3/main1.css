@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #382b13, #202226);
+}
+.container{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.buttongroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+button{
+    padding: 10px 10px;
+    border: none;
+    border-radius: 8px;
+    color: #c98d0a ;
+    background: linear-gradient(to right, #1d160a, #121315);  ;
+}
+h1{
+    font-size: 60px;
+    padding: 20px;
+    color: #ffffff;
+}
