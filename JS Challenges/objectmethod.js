@@ -24,3 +24,6 @@ me.isHuman = true; // Inherited properties can be overwritten
 me.printIntroduction();
 
 // 3. 
+
+
+// Noew methods
