@@ -102,3 +102,4 @@ copyWithinArray(arr1, 0, 3, 4);
 
     const splicedArray = arr4.splice(2, 1, 10, 11);
     console.log(`Array after splice (removing 1 element at index 2 and adding 10, 11): ${arr4}`);
+    
