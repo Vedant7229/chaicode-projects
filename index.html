@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaiCode Projects Portfolio | Vedant7229</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .project-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        .project-card h3 {
+            color: #4a5568;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .project-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .project-link:hover {
+            transform: scale(1.05);
+        }
+        
+        .stats {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        .stats h3 {
+            color: #4a5568;
+            margin-bottom: 1rem;
+        }
+        
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+        
+        .tech-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .github-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #4a5568;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .github-link:hover {
+            color: #667eea;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>ChaiCode Projects Portfolio</h1>
+            <p>📚 Comprehensive full-stack web development portfolio featuring projects from Chai Code Cohort</p>
+            <p>Showcasing JavaScript, HTML, and CSS implementations</p>
+            <a href="https://github.com/vedant7229/chaicode-projects" class="github-link" target="_blank">🔗 View on GitHub</a>
+        </header>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>📋 About HTML and PRD</h3>
+                <p>Projects and documents covering HTML fundamentals and Product Requirements Documents (PRD) creation and understanding.</p>
+                <a href="./About%20HTML%20and%20PRD/" class="project-link">Explore Projects</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>🌐 Basic of Web and Browser</h3>
+                <p>Fundamental concepts of web technologies and browser functionality, covering core web development principles.</p>
+                <a href="./Basic%20of%20Web%20and%20Browser/" class="project-link">Learn Basics</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>🎨 CSS Projects</h3>
+                <p>Creative CSS implementations showcasing styling techniques, animations, layouts, and responsive design patterns.</p>
+                <a href="./CSS%20Projects/" class="project-link">View Designs</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>⚡ JavaScript Challenges</h3>
+                <p>JavaScript programming challenges, algorithms, and interactive projects demonstrating problem-solving skills.</p>
+                <a href="./JS%20Challenges/" class="project-link">Try Challenges</a>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <h3>🛠️ Technologies Used</h3>
+            <div class="tech-tags">
+                <span class="tech-tag">JavaScript (59.9%)</span>
+                <span class="tech-tag">HTML (28.9%)</span>
+                <span class="tech-tag">CSS (11.2%)</span>
+            </div>
+            <p style="margin-top: 1rem; color: #666;">Built with modern web technologies during Full Stack learning journey with Chai Code Cohort</p>
+        </div>
+    </div>
+</body>
+</html>
