@@ -33,11 +33,29 @@ function createCounter(){
 
 // 5. Immediately Invoked Function Expression (IIFE)
   (function (a,b,result1){
-    return result1 = a+b;
+    return a+b;
 }) (2,3)
 
-console.log(result1)
-
 // Arrow Function
+
   const add = (a,b) => a+b;
- 
+
+// Diff btw Call & Bind Function
+
+// Call is used for changing context
+
+const person1 = {
+    name: "John",
+    greet: function(){
+        console.log(`Hello, my name is ${this.name}`);
+    }
+}
+
+const person2 = {
+    name: "Vedant"
+};
+
+
+person1.greet.call(person2)
+const bindGreet = person1.greet.bind(person2)
+bindGreet()
