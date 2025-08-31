@@ -1,0 +1,126 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CSS Projects</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(120deg, #f8fafc 0%, #e0e3f7 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            margin-top: 32px;
+            color: #364f6b;
+            font-size: 2.4rem;
+            letter-spacing: 1px;
+        }
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0;
+            justify-content: center;
+        }
+        .project-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 32px rgba(50,50,93,0.07), 0 1.5px 6px rgba(0,0,0,0.08);
+            padding: 2rem 1.5rem 1.5rem 1.5rem;
+            max-width: 260px;
+            min-width: 220px;
+            text-align: center;
+            transition: transform .18s cubic-bezier(.3,1.5,.7,1.2), box-shadow .16s;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .project-card:hover {
+            transform: translateY(-8px) scale(1.04);
+            box-shadow: 0 10px 38px rgba(36,37,51,0.13), 0 2px 8px rgba(0,0,0,.04);
+        }
+        .project-title {
+            font-size: 1.22rem;
+            font-weight: 700;
+            color: #3b3857;
+            margin-bottom: 1.1rem;
+            margin-top: .2rem;
+            letter-spacing: .7px;
+            text-transform: capitalize;
+        }
+        .project-link {
+            font-size: 1.03rem;
+            display: inline-block;
+            color: #ffffff;
+            background: linear-gradient(120deg,#36d1c4 0%, #2889e9 100%);
+            border: none;
+            border-radius: .8rem;
+            padding: .7rem 2.2rem;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: .8px;
+            box-shadow: 0 2px 8px rgba(40,137,233,0.08);
+            margin-top: .7rem;
+            transition: background 0.18s, color 0.18s, transform 0.14s;
+        }
+        .project-link:hover, .project-link:focus {
+            background: linear-gradient(110deg,#2889e9 0%, #36d1c4 100%);
+            color: #eaf4fd;
+            transform: scale(1.055);
+        }
+        @media (max-width: 650px) {
+            .projects-container {
+                flex-direction: column;
+                gap: 1.5rem;
+                align-items: center;
+            }
+        }
+        @media (max-width: 410px) {
+            .project-card {
+                min-width: 100%;
+                max-width: 100%;
+                padding: 1.2rem .7rem;
+            }
+        }
+        footer {
+            margin-bottom: 18px;
+            color: #7b809a;
+            font-size: .98rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>My CSS Projects</h1>
+    <div class="projects-container">
+        <div class="project-card">
+            <div class="project-title">Project 1</div>
+            <a class="project-link" href="./css-projects/css-project-1/cssch1.html" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <div class="project-title">Project 2</div>
+            <a class="project-link" href="./css-projects/css-project-2/pricing-table-1/index.html" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <div class="project-title">Project 3</div>
+            <a class="project-link" href="./css-projects/css-project-2/pricing-table-2/" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <div class="project-title">Project 4 (In Process)</div>
+            <a class="project-link"  target="_blank">View Project</a>
+        </div>
+    </div>
+    <footer>
+    </footer>
+</body>
+</html>
+
+
