@@ -21,3 +21,13 @@ document.querySelector("uses css selector")
 example : document.querySelector("#heading") /*# for id and . for class*/ 
 example : document.querySelector(".class1") 
 
+// In array you can directly add property but in node list you have to specify index everytime
+const myH1 = document.querySelectorAll("h1")
+myH1[0].style.color = "red" /*this will as we have specified index and this is nodelist*/
+myH1.style.color = "red" /*if this was array, this is fine but bcoz it is nodelist this will show error*/
+
+// HTML collection is also different it dont have basic array properties also like foreach
+
+// Coverting nodelist or htmlcollection in array
+const class1 = document.getElementsByClassName("class1")
+Array.from(class1) /*now this converted into array*/
