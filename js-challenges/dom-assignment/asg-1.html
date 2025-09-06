@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Bulb Toogle</title>
+    <script></script>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #2C2C2C;
+            background-color: white;
+        }
+        .bulbOn{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: #899B9C;
+            margin: 150px auto 0;
+        
+        
+        
+        }
+        .base{
+            height: 70px;
+            width: 50px;
+            background-color: #738182;
+            border-radius: 10%;
+            margin: auto;
+        }
+        /* .on{
+            background-color: #EEBC0F;
+            box-shadow: 0 0 30px 15px rgba(240, 205, 11,0.4);
+        } */
+        button{
+            background-color: #2473AE;
+            border-radius: 15%;
+            padding: 20px;
+            color: white;
+            font-weight: 600;
+            font-size: medium;
+            border: #2473AE;
+            display: flex;
+            margin: 40px auto;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+
+        h2, h3{
+            text-align: center;
+            margin-top: 20px;
+        }
+        h3{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+<h2>    Light Bulb Toogle </h2>
+<h3>Click on the button to turn on the light bulb on or off </h3>
+<div class="bulbOn" id="bulbOn"></div>
+<div class="base"></div>
+<button id="mainButton" onclick="" >Turn On</button>    
+
+<script src="asg-1.js" defer></script>
+</body>
+</html>
