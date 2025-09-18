@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile preview</title>
+    <style>
+    *{
+            margin-left: 30px;
+            margin-right: 80px;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #2C2C2C;
+            background-color: white;
+        }
+        .form_intro{
+            text-align: left;
+        }
+        
+        label{
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .form_input{
+            display: flex ;
+            flex-direction: column;
+            gap: 4px;
+            margin-bottom: 15px;
+        }
+        input,textarea{
+            
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 15px;
+
+        }
+
+        .previewbox{
+            margin: 20px;
+            padding: 5px;
+            border: 2px rgb(192, 192, 192) solid;
+            border-radius: 16px;
+            background-color: #f9f9f9;
+        }
+        
+        </style>
+</head>
+
+<body>
+    <form action="">
+
+        <div class="form_intro">
+            <h1>Profile Form </h1>
+            <h3>Enter your info below</h3>
+        </div>
+
+        <div class="form_input">
+            <label for="name">Name :</label>
+            <input type="text" name="name" id="name" placeholder="Enter your Name">
+        </div>
+
+        <div class="form_input">
+            <label for="job">Job Title :</label>
+            <input type="text" name="job" id="job_title" placeholder="Mention your Job Title">
+        </div>
+
+        <div class="form_input">
+            <label for="age">Age :</label>
+            <input type="text" name="age" id="age" placeholder="Enter your Age">
+        </div>
+
+        <div class="form_input">
+            <label for="bio">Bio : </label>
+            <textarea name="bio" id="bio" row="4" cols="50" placeholder="Enter your Bio"></textarea>
+        </div>
+    </form>
+
+    <div class="preview_box">
+        
+    </div>
+
+    <div class="previewbox">
+        <p><strong>Name :</strong> <span id="preview_name"></span></p>
+        <p><strong>Job Title :</strong> <span id="preview_job"></span> </p>
+        <p><strong>Age :</strong> <span id="preview_age"></span> </p>
+        <p><strong>Bio :</strong> <span id="preview_bio"></span> </p>
+    </div>
+    <script src="asg-3.js"></script>
+</body>
+</html>
